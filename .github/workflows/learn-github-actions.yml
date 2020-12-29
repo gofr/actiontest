@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: echo Hello, world!
-      - name: Run a multi-line script
+      - name: Set up environment
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          sudo apt install libjpeg zlib libfreetype
+          python3 -m pip install --upgrade pip
+          python3 -m pip install --upgrade Pillow
+      - name: Run
+        run: ./run.py
