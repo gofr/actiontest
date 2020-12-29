@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from PIL import Image
-import unused
 
 
 if __name__ == '__main__':
@@ -9,3 +8,5 @@ if __name__ == '__main__':
     name = 'icon.png'
     img.save(name)
     print(f'Image "{name}" created successfully.')
+
+    """This is a long line just to check if the 100 character line limit is enforced properly."""
