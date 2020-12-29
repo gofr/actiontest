@@ -12,7 +12,7 @@ jobs:
       - name: Set up environment
         run: |
           # Pillow system requirements first:
-          sudo apt install libjpeg8 zlib1g libfreetype6
+          sudo apt-get install libjpeg8 zlib1g libfreetype6
           python3 -m pip install --upgrade -r requirements.txt
       - name: Check style
         run: python3 -m flake8
